@@ -1,0 +1,71 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "player de músicas locais",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.PauseIntent",
+          "samples": []
+        },
+        {
+          "name": "PlayRandomSongFromArtistIntent",
+          "slots": [
+            {
+              "name": "artist",
+              "type": "AMAZON.MusicGroup"
+            }
+          ],
+          "samples": [
+            "tocar uma música aleatória de {artist}",
+            "tocar uma música aleatória do {artist}",
+            "tocar uma música aleatória da {artist}",
+            "tocar qualquer música de {artist}",
+            "tocar qualquer música do {artist}",
+            "tocar qualquer música da {artist}"
+          ]
+        },
+        {
+          "name": "PlayRandomSongIntent",
+          "samples": [
+            "tocar uma música aleatória",
+            "toque qualquer música",
+            "tocar música aleatória",
+            "tocar algo aleatório",
+            "colocar uma música aleatória"
+          ]
+        },
+        {
+          "name": "PlaySongIntent",
+          "slots": [
+            {
+              "name": "song",
+              "type": "AMAZON.MusicRecording"
+            }
+          ],
+          "samples": [
+            "tocar {song}",
+            "toque {song}",
+            "toca {song}",
+            "tocar a música {song}",
+            "toca a música {song}",
+            "colocar a música {song}",
+            "para tocar {song}"
+          ]
+        }
+      ],
+      "types": []
+    }
+  }
+}
